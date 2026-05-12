@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northern Trail Outfitters</title>
+  <script type="module" crossorigin src="/nto-adaptive-demo-SFWT27/assets/index-BkX3295T.js"></script>
+  <link rel="stylesheet" crossorigin href="/nto-adaptive-demo-SFWT27/assets/index-D9xGwQ2S.css">
+</head>
+<body data-state="0">
+
+  <!-- TOPBAR -->
+  <div class="topbar"></div>
+
+  <!-- MEMBER BAR (hidden until state 2) -->
+  <div id="member-bar" class="member-bar hidden">
+    <span id="member-bar-text">Bonjour, Sophie · Membre NTO depuis 2019 · Niveau Summit · 3 240 points</span>
+  </div>
+
+  <!-- PROMO BANNER (hidden until state 3) -->
+  <div id="promo-banner" class="promo-banner hidden">
+    <span id="promo-banner-text">✦&nbsp;&nbsp;Emballage cadeau offert&nbsp;&nbsp;·&nbsp;&nbsp;Message personnel inclus&nbsp;&nbsp;·&nbsp;&nbsp;Livraison express disponible</span>
+    <button class="promo-close" onclick="this.parentElement.classList.add('hidden')">×</button>
+  </div>
+
+  <!-- RESTART BAR (hidden until state 1) -->
+  <div id="restart-bar" class="restart-bar hidden">
+    <span class="restart-label">MODE DÉMO</span>
+    <button class="restart-btn" onclick="resetDemo()">↺ Recommencer la démo</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav" id="site-nav">
+        <a href="#" class="nav-link">FEMME</a>
+        <a href="#" class="nav-link">HOMME</a>
+        <a href="#" class="nav-link" data-cat="equipement">ÉQUIPEMENT</a>
+        <a href="#" class="nav-link" data-cat="equipement">CHAUSSURES</a>
+        <a href="#" class="nav-link" data-cat="nutrition">NUTRITION</a>
+        <a href="#" class="nav-link">ÉLECTRONIQUE</a>
+        <a href="#" class="nav-link">PROMOTIONS</a>
+        <a href="/loyalty.html" class="nav-link">FIDÉLITÉ</a>
+        <a href="#" class="nav-link nav-about">SERVICES</a>
+      </nav>
+
+      <a href="#" class="site-logo" onclick="event.preventDefault(); resetDemo()"><img src="/nto-adaptive-demo-SFWT27/assets/logo/nto-primary-logo-01.png" alt="Northern Trail Outfitters" class="logo-img" /></a>
+
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Compte">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Favoris">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section id="hero-section" class="hero-section">
+      <div class="hero-panel" id="hero-panel">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-content" id="hero-content">
+          <p class="hero-category" id="hero-category">MODE</p>
+          <h1 class="hero-title" id="hero-title">NOUVELLE SAISON<br>ÉTÉ 2026</h1>
+          <a href="#" class="hero-cta" id="hero-cta">DÉCOUVRIR</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL PANELS -->
+    <section id="editorial-section" class="editorial-section">
+      <div class="editorial-panel" id="editorial-panel-1">
+        <div class="editorial-bg editorial-bg-1" id="editorial-bg-1"></div>
+        <div class="editorial-content">
+          <p class="editorial-category" id="editorial-cat-1">PARFUMS</p>
+          <h2 class="editorial-title" id="editorial-title-1">LES INCONTOURNABLES</h2>
+          <a href="#" class="editorial-cta">DÉCOUVRIR</a>
+        </div>
+      </div>
+      <div class="editorial-panel" id="editorial-panel-2">
+        <div class="editorial-bg editorial-bg-2" id="editorial-bg-2"></div>
+        <div class="editorial-content">
+          <p class="editorial-category" id="editorial-cat-2">ÉQUIPEMENT</p>
+          <h2 class="editorial-title" id="editorial-title-2">HAUTE PERFORMANCE</h2>
+          <a href="#" class="editorial-cta">DÉCOUVRIR</a>
+        </div>
+      </div>
+      <div class="editorial-panel" id="editorial-panel-3">
+        <div class="editorial-bg editorial-bg-3" id="editorial-bg-3"></div>
+        <div class="editorial-content">
+          <p class="editorial-category" id="editorial-cat-3">RUNNING</p>
+          <h2 class="editorial-title" id="editorial-title-3">LES NOUVEAUTÉS</h2>
+          <a href="#" class="editorial-cta">DÉCOUVRIR</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section id="product-section" class="product-section">
+      <div class="product-section-header">
+        <h2 class="product-section-title" id="product-section-title">NOS ESSENTIELS</h2>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <!-- Injecté dynamiquement -->
+      </div>
+    </section>
+
+    <!-- CATEGORY SECTION (split view — hidden until state 4) -->
+    <section id="category-section" class="category-section hidden">
+      <div class="category-header">
+        <div class="category-header-left">
+          <p class="category-name" id="category-name">ÉQUIPEMENT TRAIL & OUTDOOR</p>
+          <p class="category-count" id="category-count">6 produits</p>
+        </div>
+        <button class="category-restart-btn" onclick="resetDemo()">↺ Recommencer la démo</button>
+      </div>
+      <div id="sf-insight-bar" class="sf-insight-bar" style="display:none">
+        <span class="sf-dot"></span>
+        <span id="sf-insight-text">Salesforce personnalise votre sélection en temps réel</span>
+        <span class="sf-badge">SALESFORCE AI</span>
+      </div>
+      <div class="jewellery-grid" id="jewellery-grid">
+        <!-- Injecté dynamiquement -->
+      </div>
+    </section>
+
+    <!-- APPOINTMENT SECTION (hidden until state 4) -->
+    <section id="appointment-section" class="appointment-section hidden">
+      <div class="appointment-inner">
+        <p class="appointment-eyebrow">SERVICE EXCLUSIF</p>
+        <h2 class="appointment-title">Votre conseiller personnel<br>vous attend en boutique NTO</h2>
+        <p class="appointment-text">Bénéficiez d'un accompagnement sur mesure dans notre boutique flagship. Votre sélection sera préparée avant votre arrivée.</p>
+        <button class="appointment-cta" id="appt-cta-btn">PRENDRE RENDEZ-VOUS</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibilité</a>
+        <a href="#">Trouver un magasin</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Northern Trail Outfitters. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div id="chat-widget" class="chat-widget">
+    <!-- Bouton fermé -->
+    <button id="chat-toggle-btn" class="chat-toggle" onclick="toggleChat()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+      <span class="chat-toggle-label">Votre conseiller NTO</span>
+    </button>
+
+    <!-- Carte chat -->
+    <div id="chat-card" class="chat-panel hidden">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="chat-dot"></span>
+          <span class="chat-brand">NORTHERN TRAIL OUTFITTERS</span>
+        </div>
+        <p class="chat-subtitle">Votre conseiller personnel</p>
+        <button class="chat-close" onclick="toggleChat()">×</button>
+      </div>
+
+      <!-- Privacy screen (état 1) -->
+      <div id="chat-privacy-screen" class="chat-privacy hidden">
+        <div class="chat-privacy-body">
+          <p class="chat-privacy-title">Bienvenue</p>
+          <p class="chat-privacy-text">Identifiez-vous pour bénéficier d'une expérience 100% personnalisée — votre historique, vos préférences, vos avantages fidélité NTO.</p>
+          <input type="email" id="chat-email-input" class="chat-email-input" placeholder="Votre adresse e-mail" />
+          <label class="chat-agree-label">
+            <input type="checkbox" id="chat-agree-checkbox" onchange="toggleStartBtn()" />
+            <span>J'accepte que mes données soient utilisées pour personnaliser mon expérience</span>
+          </label>
+          <button id="chat-start-btn" class="chat-start-btn" disabled onclick="handleEmailSubmit()">
+            Démarrer la conversation ✦
+          </button>
+          <p class="chat-security-note">🔒 Données protégées — Salesforce Customer 360</p>
+
+        </div>
+      </div>
+
+      <!-- Conversation (état 2+) -->
+      <div id="chat-conversation" class="chat-conversation hidden">
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-buttons" id="chat-buttons"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPOINTMENT MODAL (state 6) -->
+  <div id="appt-modal" class="appt-modal hidden">
+    <div class="appt-modal-inner">
+      <button class="appt-modal-close" onclick="closeApptModal()">×</button>
+      <h2 class="appt-modal-title">RÉSERVER EN BOUTIQUE</h2>
+      <div class="appt-modal-info">
+        <p><span>Magasin</span> NTO — 150 Champs-Élysées, Paris 8<sup>e</sup></p>
+        <p><span>Conseiller</span> Alex M.</p>
+      </div>
+      <div class="appt-calendar">
+        <p class="calendar-month">JUIN 2025</p>
+        <div class="calendar-grid">
+          <div class="cal-day-header">Lu</div><div class="cal-day-header">Ma</div><div class="cal-day-header">Me</div><div class="cal-day-header">Je</div><div class="cal-day-header">Ve</div><div class="cal-day-header">Sa</div><div class="cal-day-header">Di</div>
+          <div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day">1</div>
+          <div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div><div class="cal-day available selectable" data-date="6" onclick="selectDate(this)">6</div><div class="cal-day available selectable" data-date="7" onclick="selectDate(this)">7</div><div class="cal-day">8</div>
+          <div class="cal-day">9</div><div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div><div class="cal-day available selectable selected" data-date="13" onclick="selectDate(this)">13</div><div class="cal-day available selectable" data-date="14" onclick="selectDate(this)">14</div><div class="cal-day">15</div>
+          <div class="cal-day">16</div><div class="cal-day">17</div><div class="cal-day">18</div><div class="cal-day">19</div><div class="cal-day">20</div><div class="cal-day">21</div><div class="cal-day">22</div>
+          <div class="cal-day">23</div><div class="cal-day">24</div><div class="cal-day">25</div><div class="cal-day">26</div><div class="cal-day">27</div><div class="cal-day">28</div><div class="cal-day">29</div>
+          <div class="cal-day">30</div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div>
+        </div>
+        <div class="time-slots" id="time-slots">
+          <p class="time-slots-label">Créneaux disponibles — <span id="selected-date-label">Vendredi 13 juin</span> :</p>
+          <div class="slots">
+            <button class="slot" onclick="selectSlot(this)">10h00</button>
+            <button class="slot" onclick="selectSlot(this)">11h30</button>
+            <button class="slot selected" onclick="selectSlot(this)">14h30</button>
+            <button class="slot" onclick="selectSlot(this)">16h00</button>
+          </div>
+        </div>
+      </div>
+      <button class="appt-confirm-btn" onclick="confirmAppointment()">CONFIRMER MON RENDEZ-VOUS</button>
+    </div>
+  </div>
+
+  <!-- CONFIRMATION SCREEN (state 7) -->
+  <div id="confirmation-screen" class="confirmation-screen hidden">
+    <div class="confirmation-inner">
+      <p class="confirmation-star">✦</p>
+      <h2 class="confirmation-title">Votre rendez-vous est confirmé</h2>
+      <div class="confirmation-profile">
+        <p class="conf-name">Sophie Martin</p>
+        <p class="conf-tier">Membre Summit · N° 482 917</p>
+      </div>
+      <div class="confirmation-details">
+        <div class="conf-row"><span class="conf-label">Magasin</span><span class="conf-value">NTO — 150 Champs-Élysées, Paris 8<sup>e</sup></span></div>
+        <div class="conf-row"><span class="conf-label">Date</span><span class="conf-value" id="conf-date">Vendredi 13 juin 2025</span></div>
+        <div class="conf-row"><span class="conf-label">Heure</span><span class="conf-value" id="conf-time">14h30</span></div>
+        <div class="conf-row"><span class="conf-label">Conseiller</span><span class="conf-value">Alex M.</span></div>
+      </div>
+      <div class="confirmation-selection">
+        <p class="conf-selection-label">Votre sélection transmise à votre conseiller :</p>
+        <p class="conf-selection-product" id="conf-product">→ Veste Trail Pro — Imperméable Gore-Tex — 320 €</p>
+      </div>
+      <p class="confirmation-note">Un rappel vous sera envoyé 24h avant votre visite.</p>
+      <div class="confirmation-actions">
+        <button class="conf-btn-secondary" onclick="resetDemo()">↺ Recommencer la démo</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
