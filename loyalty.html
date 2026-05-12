@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Programme Fidélité — Northern Trail Outfitters</title>
+  
+  
+  
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/loyalty.css" />
+</head>
+<body>
+
+  <div class="topbar"></div>
+
+  <!-- MEMBER BAR -->
+  <div class="member-bar">
+    Sophie Martin&nbsp;&nbsp;·&nbsp;&nbsp;Membre NTO depuis 2019&nbsp;&nbsp;·&nbsp;&nbsp;Niveau Summit&nbsp;&nbsp;·&nbsp;&nbsp;3 240 points
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav">
+        <a href="/" class="nav-link">FEMME</a>
+        <a href="/" class="nav-link">HOMME</a>
+        <a href="/" class="nav-link" data-cat="equipement">ÉQUIPEMENT</a>
+        <a href="/" class="nav-link" data-cat="equipement">CHAUSSURES</a>
+        <a href="/" class="nav-link" data-cat="nutrition">NUTRITION</a>
+        <a href="/" class="nav-link">ÉLECTRONIQUE</a>
+        <a href="/" class="nav-link">PROMOTIONS</a>
+        <a href="/loyalty.html" class="nav-link active">FIDÉLITÉ</a>
+        <a href="/" class="nav-link nav-about">SERVICES</a>
+      </nav>
+
+      <a href="/" class="site-logo"><img src="/assets/logo/nto-primary-logo-01.png" alt="Northern Trail Outfitters" class="logo-img" /></a>
+
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Compte">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Favoris">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="loyalty-hero">
+    <div class="loy-hero-content">
+      <p class="loy-hero-eyebrow">SALESFORCE LOYALTY MANAGEMENT</p>
+      <h1 class="loy-hero-title">LE PROGRAMME<br>NORTHERN TRAIL</h1>
+      <p class="loy-hero-sub">FIDÉLITÉ · AVANTAGES · EXPÉRIENCES EXCLUSIVES</p>
+      <button class="loy-join-btn" id="loy-join-btn" onclick="handleLoyaltyJoin()">REJOINDRE LE PROGRAMME</button>
+      <div class="loy-tiers">
+        <span class="loy-tier-pill">Explorer</span>
+        <span class="loy-tier-pill">Trailblazer</span>
+        <span class="loy-tier-pill">Ascent</span>
+        <span class="loy-tier-pill active">Summit ✦</span>
+        <span class="loy-tier-pill">Peak</span>
+        <span class="loy-tier-pill">Everest</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <div class="loy-section">
+    <p class="loy-section-title">Tableau de bord</p>
+    <div class="dash-grid">
+
+      <!-- Points -->
+      <div class="dash-card">
+        <p class="dash-label">Points disponibles</p>
+        <p class="dash-value">3 240</p>
+        <p class="dash-value-sub">Points NTO</p>
+      </div>
+
+      <!-- Niveau -->
+      <div class="dash-card">
+        <p class="dash-label">Niveau actuel</p>
+        <p class="dash-value" style="color:var(--gold);font-size:26px">Summit</p>
+        <p class="dash-value-sub">Membre depuis 2019</p>
+      </div>
+
+      <!-- Avantages -->
+      <div class="dash-card">
+        <p class="dash-label">Avantages actifs</p>
+        <p class="dash-value" style="font-size:32px">7</p>
+        <p class="dash-value-sub">dont 2 expirant bientôt</p>
+      </div>
+
+      <!-- Progression -->
+      <div class="dash-card span-2">
+        <p class="dash-label">Progression vers Peak</p>
+        <div class="tier-progress-wrap">
+          <div class="tier-row">
+            <span>3 240 pts</span>
+            <span>Objectif : 5 000 pts</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="loy-progress-fill" style="width:0%"></div>
+          </div>
+          <p class="tier-next-label">1 760 points restants</p>
+        </div>
+        <div class="tier-steps">
+          <div class="tier-step done">Explorer</div>
+          <div class="tier-step done">Trailblazer</div>
+          <div class="tier-step done">Ascent</div>
+          <div class="tier-step current">Summit</div>
+          <div class="tier-step">Peak</div>
+          <div class="tier-step">Everest</div>
+        </div>
+      </div>
+
+      <!-- Avantages Summit -->
+      <div class="dash-card">
+        <p class="dash-label">Avantages Summit</p>
+        <div class="benefits-list">
+          <div class="benefit-row">
+            <div class="benefit-icon">🎒</div>
+            <span class="benefit-label">Livraison gratuite illimitée</span>
+            <span class="benefit-check">✓</span>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-icon">🏔️</div>
+            <span class="benefit-label">Accès early aux nouvelles collections</span>
+            <span class="benefit-check">✓</span>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-icon">🧭</div>
+            <span class="benefit-label">Conseiller équipement dédié</span>
+            <span class="benefit-check">✓</span>
+          </div>
+          <div class="benefit-row">
+            <div class="benefit-icon">⛺</div>
+            <span class="benefit-label">Événements outdoor exclusifs</span>
+            <span class="benefit-check">✓</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REWARDS -->
+  <div class="loy-section" style="padding-top:0">
+    <p class="loy-section-title">Catalogue de récompenses</p>
+    <div class="rewards-grid" id="loy-rewards-grid"></div>
+  </div>
+
+  <!-- GAMIFICATION -->
+  <div class="loy-section-dark">
+    <div class="loy-section" style="padding-top:0;padding-bottom:0">
+      <p class="loy-section-title">Jeux &amp; Défis</p>
+      <div class="gamif-grid">
+
+        <!-- SPIN WHEEL -->
+        <div class="game-card">
+          <p class="game-card-title">Roue de la chance</p>
+          <div class="spin-wrap">
+            <div class="wheel-outer">
+              <div class="wheel-pointer"></div>
+              <div class="wheel" id="loy-spin-wheel"></div>
+              <div class="wheel-center"></div>
+            </div>
+            <p class="spin-result" id="loy-spin-result">1 tentative disponible</p>
+            <button class="game-btn" id="loy-spin-btn" onclick="doSpin()">LANCER</button>
+          </div>
+        </div>
+
+        <!-- SCRATCH CARD -->
+        <div class="game-card">
+          <p class="game-card-title">Carte à gratter</p>
+          <div class="scratch-wrap">
+            <div class="scratch-outer" onclick="doScratch()">
+              <div class="scratch-cover" id="loy-scratch-cover">GRATTEZ ICI</div>
+              <div class="scratch-reveal">
+                <span class="scratch-prize" id="loy-scratch-prize">🎁</span>
+                <span class="scratch-prize-label" id="loy-scratch-label">—</span>
+              </div>
+            </div>
+            <p class="spin-result" id="loy-scratch-result">Votre carte du mois</p>
+            <button class="game-btn" disabled>Nouvelle carte le 1er juin</button>
+          </div>
+        </div>
+
+        <!-- BADGES -->
+        <div class="game-card">
+          <p class="game-card-title">Badges &amp; Statuts</p>
+          <div class="badge-grid" id="loy-badge-grid"></div>
+          <button class="game-btn" style="margin-top:16px" onclick="unlockBadge()">DÉBLOQUER "AMBASSADEUR"</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- DÉFIS + DÉFI DU MOIS -->
+  <div class="loy-section">
+    <p class="loy-section-title">Mes Défis</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+
+      <div class="trail-list" id="loy-trail-list"></div>
+
+      <div class="dash-card" style="align-self:start">
+        <p class="dash-label">Défi du mois</p>
+        <p style="font-family:var(--font-serif);font-size:18px;margin:8px 0">Défi Randonnée</p>
+        <p style="font-size:11px;color:var(--gray-mid);line-height:1.7">Effectuez 2 achats en catégorie Équipement avant le 31 mai et gagnez 500 points bonus.</p>
+        <div style="margin-top:16px">
+          <div class="tier-row">
+            <span>1 achat effectué</span><span>2 requis</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width:50%;background:var(--gold)"></div>
+          </div>
+        </div>
+        <button class="loy-join-btn" style="margin-top:16px;padding:10px 24px;font-size:9px">RELEVER LE DÉFI</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TRANSACTIONS -->
+  <div class="loy-section" style="padding-top:0">
+    <p class="loy-section-title">Historique des points</p>
+    <div class="dash-card">
+      <div class="tx-list" id="loy-tx-list"></div>
+    </div>
+  </div>
+
+  <!-- VOUCHERS -->
+  <div class="loy-section" style="padding-top:0">
+    <p class="loy-section-title">Mes avantages &amp; bons</p>
+    <div class="voucher-row" id="loy-voucher-row"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#">Conditions du programme</a>
+        <a href="#">FAQ Fidélité</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Trouver un magasin</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Northern Trail Outfitters. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div id="loy-chat-widget" class="chat-widget">
+    <button id="loy-chat-toggle" class="chat-toggle" onclick="toggleLoyaltyChat()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+      <span class="chat-toggle-label">Votre conseiller NTO</span>
+    </button>
+    <div id="loy-chat-panel" class="chat-panel hidden">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="chat-dot"></span>
+          <span class="chat-brand">NORTHERN TRAIL OUTFITTERS</span>
+        </div>
+        <p class="chat-subtitle">Programme Fidélité</p>
+        <button class="chat-close" onclick="toggleLoyaltyChat()">×</button>
+      </div>
+      <div style="padding:16px;font-size:12px;line-height:1.6">
+        <div class="chat-bubble-agent">
+          Bonjour Sophie,<br><br>
+          Vous êtes membre Summit avec 3 240 points. Il vous reste 1 760 points pour atteindre le niveau Peak.<br><br>
+          Votre bon 20 € est disponible — souhaitez-vous l'utiliser lors de votre prochain achat ?
+        </div>
+      </div>
+      <div style="padding:8px 14px 14px;border-top:1px solid var(--gray-light)">
+        <button class="chat-btn" onclick="window.location.href='/'">
+          <span class="chat-btn-icon">←</span>
+          <span class="chat-btn-label">Retour à la boutique</span>
+          <span class="chat-btn-chevron">›</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loy-toast" id="loy-toast"></div>
+
+  <script type="module" src="/src/loyalty.js"></script>
+</body>
+</html>

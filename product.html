@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veste Trail Pro — Northern Trail Outfitters</title>
+  
+  
+  
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/product.css" />
+</head>
+<body class="product-page">
+
+  <div class="topbar"></div>
+
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <span>Livraison offerte dès 100 € d'achat et retour gratuit en magasin.</span>
+    <button class="promo-close" onclick="this.parentElement.classList.add('hidden')">×</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav">
+        <a href="/" class="nav-link">← RETOUR</a>
+        <a href="#" class="nav-link">FEMME</a>
+        <a href="#" class="nav-link">HOMME</a>
+        <a href="#" class="nav-link active" data-cat="equipement">ÉQUIPEMENT</a>
+        <a href="#" class="nav-link">CHAUSSURES</a>
+        <a href="#" class="nav-link">NUTRITION</a>
+        <a href="#" class="nav-link">ÉLECTRONIQUE</a>
+        <a href="/loyalty.html" class="nav-link">FIDÉLITÉ</a>
+        <a href="#" class="nav-link nav-about">SERVICES</a>
+      </nav>
+      <a href="/" class="site-logo"><img src="/assets/logo/nto-primary-logo-01.png" alt="Northern Trail Outfitters" class="logo-img" /></a>
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Compte">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Favoris">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT LAYOUT -->
+  <main class="product-main">
+    <div class="product-layout">
+
+      <!-- IMAGE GAUCHE -->
+      <div class="product-image-col">
+        <div class="product-thumb-list">
+          <div class="thumb thumb-active"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+        </div>
+        <div class="product-main-image">
+          <div class="product-main-placeholder">
+            <span class="product-main-icon">🧥</span>
+            <p class="product-main-icon-label">Veste Trail Pro</p>
+            <p class="product-main-icon-sub">Imperméable Gore-Tex · 3 couches</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFOS DROITE -->
+      <div class="product-info-col">
+        <div class="product-breadcrumb">
+          <a href="/">Équipement</a>
+          <span>›</span>
+          <a href="/">Vestes</a>
+        </div>
+
+        <h1 class="prod-name">Veste Trail Pro</h1>
+        <p class="prod-type">Imperméable Gore-Tex, coupe ajustée</p>
+        <a href="#" class="prod-details-link">Plus de détails</a>
+        <p class="prod-ref">Réf. T7721</p>
+
+        <div class="prod-divider"></div>
+
+        <div class="prod-price-row">
+          <span class="prod-price">320 €</span>
+          <span class="prod-new-tag">NOUVEAUTÉ</span>
+          <button class="prod-fav-btn" aria-label="Favoris">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </button>
+        </div>
+
+        <div class="prod-divider"></div>
+
+        <p class="prod-availability-label">Disponibilité en magasin</p>
+        <p class="prod-availability-value">Disponible — NTO Paris Champs-Élysées, Paris 8<sup>e</sup></p>
+
+        <div class="prod-divider"></div>
+
+        <button class="prod-add-bag-btn" onclick="openApptModal()">RÉSERVER EN MAGASIN</button>
+        <button class="prod-secondary-btn" onclick="window.location.href='/'">← Retour à la sélection</button>
+
+        <a href="#" class="prod-reviews-link">Avis clients</a>
+
+        <div class="prod-divider"></div>
+
+        <!-- NOTE -->
+        <div class="prod-description">
+          <p class="prod-desc-eyebrow">Description</p>
+          <p class="prod-desc-text">
+            La Veste Trail Pro a été conçue pour les randonneurs qui ne s'arrêtent pas à la météo. Sa membrane Gore-Tex 3 couches offre une imperméabilité totale tout en restant respirante — parfaite pour les longues journées en montagne.
+            Légère, compressible, et taillée pour le mouvement.
+          </p>
+        </div>
+
+        <div class="prod-divider"></div>
+
+        <!-- DÉTAILS TECHNIQUES -->
+        <div class="prod-details">
+          <p class="prod-detail-row"><span>Matière</span> Gore-Tex 3 couches, polyester recyclé</p>
+          <p class="prod-detail-row"><span>Étanchéité</span> 28 000 mm colonne d'eau</p>
+          <p class="prod-detail-row"><span>Poids</span> 390 g — ultra-légère</p>
+          <p class="prod-detail-row"><span>Collection</span> Trail Pro — Printemps 2026</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibilité</a>
+        <a href="#">Trouver un magasin</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Northern Trail Outfitters. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div id="chat-widget" class="chat-widget">
+    <button id="chat-toggle" class="chat-toggle" onclick="toggleProductChat()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+      <span class="chat-toggle-label">Votre conseiller NTO</span>
+    </button>
+    <div id="product-chat-panel" class="chat-panel hidden">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="chat-dot"></span>
+          <span class="chat-brand">NORTHERN TRAIL OUTFITTERS</span>
+        </div>
+        <p class="chat-subtitle">Votre conseiller personnel</p>
+        <button class="chat-close" onclick="toggleProductChat()">×</button>
+      </div>
+      <div class="chat-messages" style="padding:16px;font-size:12px;line-height:1.6;">
+        <div style="background:#1a1a1a;color:white;padding:11px 14px;border-radius:4px 14px 14px 14px;font-size:12px;line-height:1.6;">
+          Vous consultez la Veste Trail Pro. Une veste qui mérite d'être essayée — la coupe et la respirabilité se sentent en mouvement.
+          <br><br>Je peux vous réserver un créneau en boutique. Un conseiller équipement vous guidera dans votre choix.
+        </div>
+      </div>
+      <div style="padding:12px 14px;border-top:1px solid #e8e8e6;display:flex;flex-direction:column;gap:8px;">
+        <button class="chat-btn" onclick="openApptModal()">
+          <span class="chat-btn-icon">📅</span>
+          <span class="chat-btn-label">Réserver un rendez-vous en boutique</span>
+          <span class="chat-btn-chevron">›</span>
+        </button>
+        <button class="chat-btn" onclick="window.location.href='/'">
+          <span class="chat-btn-icon">←</span>
+          <span class="chat-btn-label">Retour à la sélection</span>
+          <span class="chat-btn-chevron">›</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPOINTMENT MODAL -->
+  <div id="appt-modal" class="appt-modal hidden">
+    <div class="appt-modal-inner">
+      <button class="appt-modal-close" onclick="closeApptModal()">×</button>
+      <h2 class="appt-modal-title">RÉSERVER EN BOUTIQUE</h2>
+      <div class="appt-modal-info">
+        <p><span>Magasin</span> NTO — 150 Champs-Élysées, Paris 8<sup>e</sup></p>
+        <p><span>Conseiller</span> Alex M.</p>
+      </div>
+      <div class="appt-calendar">
+        <p class="calendar-month">JUIN 2025</p>
+        <div class="calendar-grid">
+          <div class="cal-day-header">Lu</div><div class="cal-day-header">Ma</div><div class="cal-day-header">Me</div><div class="cal-day-header">Je</div><div class="cal-day-header">Ve</div><div class="cal-day-header">Sa</div><div class="cal-day-header">Di</div>
+          <div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day">1</div>
+          <div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div><div class="cal-day available selectable" data-date="6" onclick="selectDate(this)">6</div><div class="cal-day available selectable" data-date="7" onclick="selectDate(this)">7</div><div class="cal-day">8</div>
+          <div class="cal-day">9</div><div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div><div class="cal-day available selectable selected" data-date="13" onclick="selectDate(this)">13</div><div class="cal-day available selectable" data-date="14" onclick="selectDate(this)">14</div><div class="cal-day">15</div>
+          <div class="cal-day">16</div><div class="cal-day">17</div><div class="cal-day">18</div><div class="cal-day">19</div><div class="cal-day">20</div><div class="cal-day">21</div><div class="cal-day">22</div>
+          <div class="cal-day">23</div><div class="cal-day">24</div><div class="cal-day">25</div><div class="cal-day">26</div><div class="cal-day">27</div><div class="cal-day">28</div><div class="cal-day">29</div>
+          <div class="cal-day">30</div>
+        </div>
+        <div class="time-slots">
+          <p class="time-slots-label">Créneaux disponibles — <span id="selected-date-label">Vendredi 13 juin</span> :</p>
+          <div class="slots">
+            <button class="slot" onclick="selectSlot(this)">10h00</button>
+            <button class="slot" onclick="selectSlot(this)">11h30</button>
+            <button class="slot selected" onclick="selectSlot(this)">14h30</button>
+            <button class="slot" onclick="selectSlot(this)">16h00</button>
+          </div>
+        </div>
+      </div>
+      <button class="appt-confirm-btn" onclick="confirmAppointment()">CONFIRMER MON RENDEZ-VOUS</button>
+    </div>
+  </div>
+
+  <!-- CONFIRMATION SCREEN -->
+  <div id="confirmation-screen" class="confirmation-screen hidden">
+    <div class="confirmation-inner">
+      <p class="confirmation-star">✦</p>
+      <h2 class="confirmation-title">Votre rendez-vous est confirmé</h2>
+      <div class="confirmation-profile">
+        <p class="conf-name">Sophie Martin</p>
+        <p class="conf-tier">Membre Summit · N° 482 917</p>
+      </div>
+      <div class="confirmation-details">
+        <div class="conf-row"><span class="conf-label">Magasin</span><span class="conf-value">NTO — 150 Champs-Élysées, Paris 8<sup>e</sup></span></div>
+        <div class="conf-row"><span class="conf-label">Date</span><span class="conf-value" id="conf-date">Vendredi 13 juin 2025</span></div>
+        <div class="conf-row"><span class="conf-label">Heure</span><span class="conf-value" id="conf-time">14h30</span></div>
+        <div class="conf-row"><span class="conf-label">Conseiller</span><span class="conf-value">Alex M.</span></div>
+      </div>
+      <div class="confirmation-selection">
+        <p class="conf-selection-label">Votre sélection transmise à votre conseiller :</p>
+        <p class="conf-selection-product">→ Mountain Jacket NTO-tech — Imperméable 3 couches — 299 €</p>
+      </div>
+      <p class="confirmation-note">Un rappel vous sera envoyé 24h avant votre visite.</p>
+      <div class="confirmation-actions">
+        <button class="conf-btn-secondary" onclick="window.location.href='/'">↺ Recommencer la démo</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let selectedDate = 'Vendredi 13 juin'
+    let selectedTime = '14h30'
+
+    function toggleProductChat() {
+      const panel = document.getElementById('product-chat-panel')
+      panel.classList.toggle('hidden')
+    }
+
+    function openApptModal() {
+      document.getElementById('appt-modal').classList.remove('hidden')
+    }
+
+    function closeApptModal() {
+      document.getElementById('appt-modal').classList.add('hidden')
+    }
+
+    function selectDate(el) {
+      document.querySelectorAll('.cal-day.selected').forEach(d => d.classList.remove('selected'))
+      el.classList.add('selected')
+      const labels = { '6': 'Vendredi 6 juin', '7': 'Samedi 7 juin', '13': 'Vendredi 13 juin', '14': 'Samedi 14 juin' }
+      selectedDate = labels[el.dataset.date] || `${el.dataset.date} juin`
+      document.getElementById('selected-date-label').textContent = selectedDate
+    }
+
+    function selectSlot(el) {
+      document.querySelectorAll('.slot.selected').forEach(s => s.classList.remove('selected'))
+      el.classList.add('selected')
+      selectedTime = el.textContent
+    }
+
+    function confirmAppointment() {
+      document.getElementById('appt-modal').classList.add('hidden')
+      document.getElementById('conf-date').textContent = selectedDate + ' 2025'
+      document.getElementById('conf-time').textContent = selectedTime
+      document.getElementById('confirmation-screen').classList.remove('hidden')
+    }
+
+    setTimeout(() => {
+      document.getElementById('product-chat-panel').classList.remove('hidden')
+    }, 1800)
+  </script>
+</body>
+</html>
