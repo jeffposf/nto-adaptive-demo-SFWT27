@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vals WP Hiking — Northern Trail Outfitters</title>
+  <link rel="stylesheet" crossorigin href="/nto-adaptive-demo-SFWT27/assets/product-DfA50eAZ.css">
+  <link rel="stylesheet" crossorigin href="/nto-adaptive-demo-SFWT27/assets/style-DrYovxIU.css">
+</head>
+<body class="product-page">
+
+  <div class="topbar"></div>
+
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <span>✦ &nbsp; Livraison gratuite dès 100 € &nbsp;·&nbsp; Retour gratuit en boutique &nbsp;·&nbsp; Emballage cadeau offert</span>
+    <button class="promo-close" onclick="this.parentElement.classList.add('hidden')">×</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">← RETOUR</a>
+        <a href="#" class="nav-link">FEMME</a>
+        <a href="#" class="nav-link">HOMME</a>
+        <a href="#" class="nav-link" data-cat="equipement">ÉQUIPEMENT</a>
+        <a href="#" class="nav-link active" data-cat="chaussures">CHAUSSURES</a>
+        <a href="#" class="nav-link">NUTRITION</a>
+        <a href="#" class="nav-link">ÉLECTRONIQUE</a>
+        <a href="loyalty.html" class="nav-link">FIDÉLITÉ</a>
+        <a href="#" class="nav-link nav-about">SERVICES</a>
+      </nav>
+      <a href="index.html" class="site-logo"><img src="/nto-adaptive-demo-SFWT27/assets/logo/nto-primary-logo-01.png" alt="Northern Trail Outfitters" class="logo-img" /></a>
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Compte">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Favoris">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT LAYOUT -->
+  <main class="product-main">
+    <div class="product-layout">
+
+      <!-- IMAGE GAUCHE -->
+      <div class="product-image-col">
+        <div class="product-thumb-list">
+          <div class="thumb thumb-active"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+        </div>
+        <div class="product-main-image">
+          <img src="/nto-adaptive-demo-SFWT27/assets/images/products/product-shoe-vals.jpg" alt="Vals WP Hiking" style="width:100%;height:100%;object-fit:contain;padding:24px;" />
+        </div>
+      </div>
+
+      <!-- INFOS DROITE -->
+      <div class="product-info-col">
+        <div class="product-breadcrumb">
+          <a href="index.html">Chaussures</a>
+          <span>›</span>
+          <a href="index.html">Randonnée Homme</a>
+        </div>
+
+        <h1 class="prod-name">Vals WP Hiking</h1>
+        <p class="prod-type">Homme — Tige mid, imperméable, semelle grip</p>
+        <a href="#" class="prod-details-link">Plus de détails</a>
+        <p class="prod-ref">Réf. SKU 1050935</p>
+
+        <div class="prod-divider"></div>
+
+        <div class="prod-price-row">
+          <span class="prod-price">120 €</span>
+          <span class="prod-new-tag">BEST-SELLER</span>
+          <button class="prod-fav-btn" aria-label="Favoris" id="prod-heart-btn" onclick="toggleFav(this)">
+            <svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+
+        <div class="prod-divider"></div>
+
+        <p class="prod-availability-label">Disponibilité en magasin</p>
+        <p class="prod-availability-value">Disponible — NTO Paris Champs-Élysées, Paris 8<sup>e</sup></p>
+
+        <div class="prod-divider"></div>
+
+        <button class="prod-add-bag-btn" onclick="openApptModal()">CLICK & COLLECT — RETRAIT EN BOUTIQUE</button>
+        <button class="prod-secondary-btn" onclick="window.location.href='index.html'">← Retour à la sélection</button>
+
+        <a href="#" class="prod-reviews-link">Avis clients (218)</a>
+
+        <div class="prod-divider"></div>
+
+        <div class="prod-description">
+          <p class="prod-desc-eyebrow">Description</p>
+          <p class="prod-desc-text">
+            La Vals WP Hiking est notre chaussure de randonnée best-seller — plébiscitée pour son rapport confort/protection exceptionnel. La membrane imperméable garde les pieds au sec quelle que soit la météo, tandis que la tige mid assure un maintien précis sur terrain accidenté. Confortable dès la première sortie, sans période de rodage.
+          </p>
+        </div>
+
+        <div class="prod-divider"></div>
+
+        <div class="prod-details">
+          <p class="prod-detail-row"><span>Imperméabilité</span> Membrane WP intégrée — étanche et respirante</p>
+          <p class="prod-detail-row"><span>Tige</span> Mid-cut — maintien de la cheville</p>
+          <p class="prod-detail-row"><span>Semelle</span> Grip multi-terrain — caoutchouc haute adhérence</p>
+          <p class="prod-detail-row"><span>Poids</span> 420 g / unité</p>
+          <p class="prod-detail-row"><span>Collection</span> Randonnée Homme — Printemps 2026</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibilité</a>
+        <a href="#">Trouver un magasin</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Northern Trail Outfitters. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div id="chat-widget" class="chat-widget">
+    <button id="chat-toggle" class="chat-toggle" onclick="toggleProductChat()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+      <span class="chat-toggle-label">Votre conseiller NTO</span>
+    </button>
+    <div id="product-chat-panel" class="chat-panel hidden">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="chat-dot"></span>
+          <span class="chat-brand">NORTHERN TRAIL OUTFITTERS</span>
+        </div>
+        <p class="chat-subtitle">Votre conseiller personnel</p>
+        <button class="chat-close" onclick="toggleProductChat()">×</button>
+      </div>
+      <div class="chat-messages" style="padding:16px;font-size:12px;line-height:1.6;">
+        <div style="background:#1a1a1a;color:white;padding:11px 14px;border-radius:4px 14px 14px 14px;font-size:12px;line-height:1.6;">
+          Vous consultez la Vals WP Hiking — notre best-seller randonnée homme.<br><br>
+          Imperméable, maintien mid-cut, confortable dès la première sortie. C'est la chaussure que nos conseillers recommandent en numéro 1 pour un cadeau.<br><br>
+          Commandez en ligne et récupérez-le en boutique au créneau de votre choix — parfait pour un cadeau.
+        </div>
+      </div>
+      <div style="padding:12px 14px;border-top:1px solid #e8e8e6;display:flex;flex-direction:column;gap:8px;">
+        <button class="chat-btn" onclick="openApptModal()">
+          <span class="chat-btn-icon">🏪</span>
+          <span class="chat-btn-label">Click & Collect — retrait en boutique</span>
+          <span class="chat-btn-chevron">›</span>
+        </button>
+        <button class="chat-btn" onclick="window.location.href='index.html'">
+          <span class="chat-btn-icon">←</span>
+          <span class="chat-btn-label">Retour à la sélection</span>
+          <span class="chat-btn-chevron">›</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPOINTMENT MODAL -->
+  <div id="appt-modal" class="appt-modal hidden">
+    <div class="appt-modal-inner">
+      <button class="appt-modal-close" onclick="closeApptModal()">×</button>
+      <h2 class="appt-modal-title">CLICK &amp; COLLECT — CHOISIR UN CRÉNEAU</h2>
+      <div class="appt-modal-info">
+        <p><span>Magasin</span> NTO — 150 Champs-Élysées, Paris 8<sup>e</sup></p>
+        <p><span>Conseiller</span> Alex M.</p>
+      </div>
+      <div class="appt-calendar">
+        <p class="calendar-month" id="calendar-month-label"></p>
+        <div class="calendar-grid" id="calendar-grid"></div>
+        <div class="time-slots">
+          <p class="time-slots-label">Créneaux disponibles — <span id="selected-date-label">—</span> :</p>
+          <div class="slots" id="slots-container"></div>
+        </div>
+      </div>
+      <button class="appt-confirm-btn" id="confirm-btn" onclick="confirmAppointment()" disabled style="opacity:0.4;cursor:not-allowed;">CONFIRMER LE CLICK &amp; COLLECT</button>
+    </div>
+  </div>
+
+  <!-- CONFIRMATION SCREEN -->
+  <div id="confirmation-screen" class="confirmation-screen hidden">
+
+    <!-- Nav bar on confirmation screen -->
+    <header class="site-header" style="position:relative;z-index:10;">
+      <div class="header-inner">
+        <nav class="site-nav">
+          <a href="index.html" class="nav-link">← RETOUR</a>
+          <a href="#" class="nav-link">FEMME</a>
+          <a href="#" class="nav-link">HOMME</a>
+          <a href="#" class="nav-link" data-cat="equipement">ÉQUIPEMENT</a>
+          <a href="#" class="nav-link active" data-cat="chaussures">CHAUSSURES</a>
+          <a href="#" class="nav-link">NUTRITION</a>
+          <a href="#" class="nav-link">ÉLECTRONIQUE</a>
+          <a href="loyalty.html" class="nav-link">FIDÉLITÉ</a>
+          <a href="#" class="nav-link nav-about">SERVICES</a>
+        </nav>
+        <a href="index.html" class="site-logo"><img src="/nto-adaptive-demo-SFWT27/assets/logo/nto-primary-logo-03.png" alt="Northern Trail Outfitters" class="logo-img" /></a>
+        <div class="header-icons">
+          <button class="icon-btn" aria-label="Rechercher">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Compte">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Favoris">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Panier">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Confirmation content -->
+    <div class="confirmation-inner">
+      <p class="confirmation-star">✦</p>
+      <h2 class="confirmation-title">Votre Click &amp; Collect est confirmé</h2>
+      <div class="confirmation-profile">
+        <p class="conf-name">Sophie Martin</p>
+        <p class="conf-tier">Membre Summit · N° 482 917</p>
+      </div>
+      <div class="confirmation-details">
+        <div class="conf-row"><span class="conf-label">Magasin</span><span class="conf-value">NTO — 150 Champs-Élysées, Paris 8<sup>e</sup></span></div>
+        <div class="conf-row"><span class="conf-label">Retrait</span><span class="conf-value" id="conf-date">Vendredi 13 juin 2025</span></div>
+        <div class="conf-row"><span class="conf-label">Créneau</span><span class="conf-value" id="conf-time">14h30</span></div>
+        <div class="conf-row"><span class="conf-label">Conseiller</span><span class="conf-value">Alex M.</span></div>
+      </div>
+      <div class="confirmation-selection">
+        <p class="conf-selection-label">Commande prête au retrait :</p>
+        <p class="conf-selection-product">→ Vals WP Hiking — Homme, tige mid imperméable — 120 €</p>
+      </div>
+      <p class="confirmation-note">Un rappel vous sera envoyé 24h avant votre retrait.</p>
+    </div>
+  </div>
+
+  <script>
+    let selectedDate = null
+    let selectedTime = null
+    let favActive = true
+
+    // May 2026: day 1 = Saturday (index 6 in Sun-start week, or index 5 in Mon-start)
+    // Mon-start: Mon=0 … Sun=6 — May 1 2026 is a Friday → index 4
+    const DAYS_FR = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim']
+    const DAY_NAMES_LONG = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
+    const SLOT_POOL = ['09h00', '10h00', '10h30', '11h00', '12h00', '14h00', '14h30', '15h30', '16h00', '17h00', '18h30']
+    const PAST_UNTIL = 21  // days 1–21 are past/today
+
+    function seededRandom(seed) {
+      let s = seed
+      return () => {
+        s = (s * 1664525 + 1013904223) & 0xffffffff
+        return (s >>> 0) / 0xffffffff
+      }
+    }
+
+    function slotsForDay(day) {
+      const rng = seededRandom(day * 37 + 2026)
+      const shuffled = [...SLOT_POOL].sort(() => rng() - 0.5)
+      const count = 3 + Math.floor(rng() * 3) // 3 to 5 slots
+      return shuffled.slice(0, count).sort()
+    }
+
+    function buildCalendar() {
+      document.getElementById('calendar-month-label').textContent = 'MAI 2026'
+
+      const grid = document.getElementById('calendar-grid')
+      grid.innerHTML = ''
+
+      // Day headers Mon–Sun
+      DAYS_FR.forEach(d => {
+        const h = document.createElement('div')
+        h.className = 'cal-day-header'
+        h.textContent = d
+        grid.appendChild(h)
+      })
+
+      // May 1, 2026 is a Friday → Mon-start offset = 4
+      const offset = 4
+      for (let i = 0; i < offset; i++) {
+        const blank = document.createElement('div')
+        blank.className = 'cal-day cal-blank'
+        grid.appendChild(blank)
+      }
+
+      for (let day = 1; day <= 31; day++) {
+        const cell = document.createElement('div')
+        cell.className = 'cal-day'
+        cell.textContent = day
+
+        if (day <= PAST_UNTIL) {
+          cell.classList.add('past')
+        } else {
+          cell.classList.add('selectable')
+          cell.onclick = () => selectCalDay(cell, day)
+        }
+        grid.appendChild(cell)
+      }
+    }
+
+    function selectCalDay(el, day) {
+      document.querySelectorAll('.cal-day.selected').forEach(d => d.classList.remove('selected'))
+      el.classList.add('selected')
+
+      // Compute day-of-week label (May 1 = Friday = index 4 in Mon-start)
+      const dowIndex = (4 + day - 1) % 7
+      selectedDate = `${DAY_NAMES_LONG[dowIndex]} ${day} mai 2026`
+      document.getElementById('selected-date-label').textContent = selectedDate
+
+      selectedTime = null
+      updateConfirmBtn()
+      renderSlots(day)
+    }
+
+    function renderSlots(day) {
+      const container = document.getElementById('slots-container')
+      container.innerHTML = ''
+      slotsForDay(day).forEach(slot => {
+        const btn = document.createElement('button')
+        btn.className = 'slot'
+        btn.textContent = slot
+        btn.onclick = () => selectSlot(btn)
+        container.appendChild(btn)
+      })
+    }
+
+    function selectSlot(el) {
+      document.querySelectorAll('.slot.selected').forEach(s => s.classList.remove('selected'))
+      el.classList.add('selected')
+      selectedTime = el.textContent
+      updateConfirmBtn()
+    }
+
+    function updateConfirmBtn() {
+      const btn = document.getElementById('confirm-btn')
+      const ready = selectedDate && selectedTime
+      btn.disabled = !ready
+      btn.style.opacity = ready ? '1' : '0.4'
+      btn.style.cursor = ready ? 'pointer' : 'not-allowed'
+    }
+
+    function confirmAppointment() {
+      document.getElementById('appt-modal').classList.add('hidden')
+      document.getElementById('conf-date').textContent = selectedDate
+      document.getElementById('conf-time').textContent = selectedTime
+      document.getElementById('confirmation-screen').classList.remove('hidden')
+    }
+
+    function toggleProductChat() {
+      const panel = document.getElementById('product-chat-panel')
+      panel.classList.toggle('hidden')
+    }
+
+    function openApptModal() {
+      document.getElementById('appt-modal').classList.remove('hidden')
+    }
+
+    function closeApptModal() {
+      document.getElementById('appt-modal').classList.add('hidden')
+    }
+
+    function toggleFav(btn) {
+      favActive = !favActive
+      const svg = btn.querySelector('svg')
+      svg.style.fill = favActive ? '#e53e3e' : 'none'
+      svg.style.stroke = favActive ? '#e53e3e' : 'currentColor'
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const svg = document.querySelector('#prod-heart-btn svg')
+      svg.style.fill = '#e53e3e'
+      svg.style.stroke = '#e53e3e'
+      buildCalendar()
+    })
+
+    setTimeout(() => {
+      document.getElementById('product-chat-panel').classList.remove('hidden')
+    }, 1800)
+  </script>
+</body>
+</html>
